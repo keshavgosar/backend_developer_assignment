@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager API UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="message"></div>
+
+    <!-- AUTHENTICATION SECTION -->
+    <div id="auth-section">
+        <h2 id="auth-title">Login</h2>
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            
+            <!-- Hidden by default, shows only on Register -->
+            <select id="role" class="hidden">
+                <option value="user">Standard User</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit" id="auth-btn">Login</button>
+        </form>
+        <p style="text-align: center;">
+            <a href="#" id="toggle-auth">Need to register? Click here</a>
+        </p>
+    </div>
+
+    <!-- DASHBOARD SECTION -->
+    <div id="dashboard-section" class="hidden">
+        <div class="header-actions">
+            <h2>My Dashboard <span id="user-role-badge" class="badge"></span></h2>
+            <button class="danger-btn" id="logout-btn">Logout</button>
+        </div>
+
+        <!-- Admin Only Button -->
+        <button id="admin-view-btn" class="admin-btn hidden">Fetch ALL Tasks (Admin Only)</button>
+        
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Task Title" required>
+            <input type="text" id="task-desc" placeholder="Task Description">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="task-list" style="margin-top: 20px;">
+            <!-- Tasks will be injected here via JS -->
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
