@@ -35,6 +35,12 @@ A scalable REST API built with Node.js, Express, and MongoDB. It features JWT-ba
 
 ---
 
+## API Documentation (Postman)
+
+[Click here to view the Postman API Documentation](https://documenter.getpostman.com/view/16518174/2sBXqNmJ5w)
+
+---
+
 ## API Documentation (Endpoints)
 
 Base URL: `/api/v1`
