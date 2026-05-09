@@ -6,8 +6,8 @@ A scalable REST API built with Node.js, Express, and MongoDB. It features JWT-ba
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+   git clone https://github.com/keshavgosar/backend_developer_assignment.git
+   cd <repo-folder>
    ```
 
 2. **Install Dependencies**
